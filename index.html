@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <!----- mano link ----------->
+        <link rel="stylesheet" href="style_index.css">
+
+
+
+        <!----------------- google fonts ------------>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
+
+
+        <title>Home</title>
+
+    </head>
+
+
+    <body>
+        <!----------------- nav ---------->
+        <nav class="container-fluid">
+            <h1><a href="index.html">Home</a></h1>
+            <ul class="quotes">
+                <li id="quote1"><a href="#">quote 1</a></li>
+                <li id="quote2"><a href="#">quote 2</a></li>
+                <li id="quote3"><a href="#">quote 3</a></li>
+            </ul>
+        </nav>
+
+        <!---------------- header ---------->
+
+        <header class="container-fluid">
+            <h1>Hello, world!</h1>
+            <h2> travel guide for tourists</h2>
+        </header>
+
+        <!---------------- random text ------------>
+        <div class="graf">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore eos perspiciatis perferendis tempora sint incidunt laudantium est laborum quasi voluptate porro fugiat aliquid, nostrum, unde quod ducimus. Quos, quas, rerum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ducimus, ut aperiam reprehenderit esse voluptatum numquam optio adipisci. Ullam eveniet, adipisci fuga magni veritatis nesciunt inventore, eaque sed possimus doloremque.</p>
+
+            <div class="container">
+                <p>Pasirinkite šalį, kurią norite aplankyti</p>                                          
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Pasirinkti..
+                        <span class="caret"></span></button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="ispanija.html">Ispanija</a>
+                        <a class="dropdown-item disabled" href="#">Italija</a>
+                        <a class="dropdown-item disabled" href="#">Prancūzija</a>
+                        <a class="dropdown-item disabled" href="#">Vokietija</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!---------------------- quotes ---------------------------->
+        <div class="quoters">
+            <div id="pasnekovas1">
+                <img class="pav" src="paveiksliukai/quates/rb_left.jpg" alt="Sir Richard Burton">
+                <h3>“Wherever you go, go with all your heart.” – Sir Richard Burton</h3>
+            </div>
+
+            <div id="pasnekovas2">
+
+                <img class="pav" src="paveiksliukai/quates/JenniferLee_headshot.jpg" alt=" Jennifer Lee">
+                <h3>“Be fearless in the pursuit of what sets your soul on fire.” – Jennifer Lee</h3>
+
+            </div>
+            <div id="pasnekovas3">
+                <img class="pav" src="paveiksliukai/quates/gs_left.jpg"  alt="Gustav Flaubert" aling="left">
+                <h3>“Travel makes one modest. You see what a tiny place you occupy in the world.” - Gustav Flaubert</h3>
+
+            </div>
+        </div>
+
+        <footer>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, possimus nesciunt, neque, ducimus, dolorem officiis illum deserunt unde dolorum obcaecati hic sed ipsam asperiores eius necessitatibus placeat aliquid adipisci dicta.<span id="rights">  &copy Copyright. </span> Kontaktai susisiekti: +37060000000</p>
+        </footer>
+
+
+
+
+
+
+        <!------------------- super skriptai ------------->
+        <!--        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+
+        <script src="skriptai.js"></script>
+        <script>
+            $(document).ready(function (){
+                $("#quote1").click(function (){
+                    $('html, body').animate({
+                        scrollTop: $("#pasnekovas1").offset().top
+                    }, 2000);
+                });
+            });
+            $(document).ready(function (){
+                $("#quote2").click(function (){
+                    $('html, body').animate({
+                        scrollTop: $("#pasnekovas2").offset().top
+                    }, 2000);
+                });
+            });        $(document).ready(function (){
+                $("#quote3").click(function (){
+                    $('html, body').animate({
+                        scrollTop: $("#pasnekovas3").offset().top
+                    }, 2000);
+                });
+            });
+        </script>
+    </body>
+</html>

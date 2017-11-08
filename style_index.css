@@ -1,0 +1,156 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3em 2em;
+    background: rgba(0, 0, 0, 0.90);
+    z-index: 999999;
+}
+
+nav ul li {
+    display:inline-block;
+    margin-top: 1em;
+    margin-left: 1em;
+    font-size: 1em 0 0 0;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color:white;
+
+}
+
+nav h1 a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav h1 {
+    margin: 0 0.5em;
+    font-size:2em;
+}
+
+
+
+
+header {
+    background: url(paveiksliukai/index0.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    background-attachment: fixed;
+
+}
+
+header h1 {
+    font-size: 5em;
+}
+
+.graf {
+    background-color: lightgrey;
+    text-align: center;
+    padding: 25em 5em;
+}
+
+
+/*
+.dropdown-menu > .disabled > a {
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        background-color: transparent;
+        background-image: none;
+        cursor: not-allowed;
+    }
+}
+*/
+
+
+#pasnekovas1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("paveiksliukai/index1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#pasnekovas2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("paveiksliukai/index2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#pasnekovas3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("paveiksliukai/index3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h3 {
+    color:white;
+    padding: 10em 5em 10em 20px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.quoters img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+
+}
+
+.pav {
+    border-color: grey;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 40%;
+    margin: 2em 0em 3em 5em;
+}
+
+    .quoters > div {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer {
+    background-color: lightgrey;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 5em 2em 0 2em;
+    font-size: 10px;
+    color:black;
+    text-decoration: none;
+}
+
+#rights {
+    font-size:15px;
+}
+
+
